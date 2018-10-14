@@ -1,0 +1,24 @@
+
+.topbar{
+    padding: 0px; margin: 0px; 
+    background:#f15525;
+    width:100%;
+    font-size:45px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    height:1.5em;
+    text-align:center;
+  }
+  .maincontent{
+    margin-left:5em;
+    margin-right:5em;
+    margin-top:1em;
+    font-family: 'Montserrat', sans-serif;
+  
+    height:85vh;
+  }
+  
+  footer{
+    background:grey;
+  }
+  
