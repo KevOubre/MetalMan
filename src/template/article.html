@@ -1,14 +1,18 @@
-{{> header}}
-<header>
-  <a class="back-to-index" href="../index.html">&larr; Index</a>
-</header>
-<article>
-  <h1>{{ title }}</h1>
-  <article>
-    <h1>{{ title }}</h1>
-    <div class="meta">
-      {{#if date}}Published: {{ date }}{{/if}}
-    </div>
-    {{{ contents }}}
-  </article>
-  {{> footer}}
+{{> header }}
+<link rel="stylesheet" href="../assets/css/style.css">
+     
+<body>
+  <div class="maincontent">
+  <h1>{{data.fields.title}}<h1>
+      <p>{{data.fields.description}}</p>
+      <audio controls="controls">
+        <source src="https:{{data.fields.audio.fields.file.url}} " type="audio/ogg">
+      </audio>
+      {{contents}}
+      <a>
+        {{fields.transcripedText}}
+      <a>
+  </div>
+</body>
+
+{{> footer}}

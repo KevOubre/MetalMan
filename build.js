@@ -1,11 +1,14 @@
+
 var
   metalsmith = require('metalsmith'),
   markdown   = require('metalsmith-markdown'),
   templates = require('metalsmith-templates'),
   assets = require('metalsmith-assets'), 
-  collections = require('metalsmith-collections');
-  handlebars = require('handlebars');
-  permalinks = require('metalsmith-permalinks');
+  collections = require('metalsmith-collections'),
+  handlebars = require('handlebars'),
+  permalinks = require('metalsmith-permalinks'),
+  contentful = require('contentful-metalsmith')
+
   
   ms = metalsmith(__dirname) // the working directory
     .clean(true)            // clean the build directory
@@ -14,24 +17,32 @@ var
         name: 'Brothers',
       }
     })
-    .source('./src/html')    // the page source directory
+    .source('./src/html/')    // the page source directory
     .destination('./build/')  // the destination directory
     .use(assets({
       source: 'src/assets/', // relative to the working directory
       destination: './assets/' // relative to the build directory
     }))
+  
     .use(collections({
-      articles: {
-        pattern: '**/*.md',
+      interview: {
+        pattern: 'interview/*.md',
         sortBy: 'date',
         reverse: true
-        },
+        },  
+      wiki : {
+        pattern : 'wiki/*.md',
+        sortBy: 'date',
+        reverse: true
+      }
       }))
     .use(markdown())        // convert markdown to HTML
-    .use(permalinks({
-      relative: false,
-      pattern: ':title',
+    .use(contentful({
+      space_id: 'knnbub1gupcl',
+      access_token: 'dad21cd7010f7eb24533c2f50a8502b1704b30051ebaea6e2ddc0c3b906769f8',
+      
     }))
+    
     .use(templates({
       engine: 'handlebars',
       directory: './src/template',
@@ -50,3 +61,12 @@ var
         console.log('E!');
       }
     });;
+
+  /*
+
+  .use(permalinks({
+      relative: false,
+      pattern: 'interviews/:title',
+    })) 
+
+    */

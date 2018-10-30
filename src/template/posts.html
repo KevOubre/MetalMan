@@ -1,0 +1,17 @@
+{{> header}}
+<body>
+  <ul>
+    <!-- available data fetched from contentful -->
+    {{#each data.entries }}
+      <li>
+        <h2 href="interview/{{fields.slug}}.html">
+        {{fields.title}}
+      
+        </h2>
+        
+      </li>
+    {{/each}}
+    </ul>
+    {{contents}}
+
+  {{> footer}}
