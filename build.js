@@ -36,6 +36,11 @@ var
         reverse: true
       }
       }))
+    .use(permalinks({
+        relative: false,
+        pattern: 'interviews/:blurb',
+ 
+      }))   
     .use(markdown())        // convert markdown to HTML
     .use(contentful({
       space_id: 'knnbub1gupcl',
@@ -49,10 +54,12 @@ var
       default: 'article.html',
       pattern: ["*/*/*html","*/*html","*html"],
       partials: {
-        header: '../partials/header',
+        articleheader: '../partials/articleheader',
+        indexheader: '../partials/indexheader',
         footer: '../partials/footer'
         }
   }))
+
    .build(function (err) {
       if (err) {
         console.log(err);
@@ -62,11 +69,5 @@ var
       }
     });;
 
-  /*
 
-  .use(permalinks({
-      relative: false,
-      pattern: 'interviews/:title',
-    })) 
 
-    */

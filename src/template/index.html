@@ -1,5 +1,4 @@
-{{> header}}
-<link rel="stylesheet" href="assets/css/style.css">
+{{> indexheader}}
   <body>
   
     <h1>{{ site.name }}</h1>
@@ -7,7 +6,7 @@
     <ul class="recent">
     {{#each interview }}
       <li>
-        <div class="title"><a href="{{ exists }}/index.html">{{ title }}</a></div>
+        <div class="title"><a href="interviews/{{ exists }}">{{ title }}</a></div>
         <div class="date">{{ date }}</div>
       </li>
     {{/each}}
