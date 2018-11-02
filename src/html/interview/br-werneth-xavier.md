@@ -1,8 +1,8 @@
 ---
-title: "Br. Xavier"
-date: 2016-10-14
-blurb: "nope"
-exists: "brother-xavier-v1" 
+title: Br. Werneth Xavier
 contentful:
-  entry_id: 5IuMeTaNSokYgAYaGuUyCg
+  contentype: 
+space_id : 5IuMeTaNSokYgAYaGuUyCg
+template : posts.html 
+exists : br-werneth-xavier
 ---

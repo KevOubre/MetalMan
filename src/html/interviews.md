@@ -5,4 +5,3 @@ contentful:
  space_id: knnbub1gupcl
 template: posts.html
 ---
-
