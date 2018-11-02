@@ -38,7 +38,7 @@ function make_files(li) {
       stream.write("contentful:" + "\n")
       stream.write("  contentype: " + "\n")
       stream.write("space_id : " + element.sys.id + "\n")
-      stream.write("template : posts.html \n")
+      stream.write("template : post.html \n")
       stream.write("exists : " + element.fields.slug +"\n")
       stream.write("---")
       stream.end();
