@@ -25,7 +25,7 @@ function make_files(li) {
     template: posts.html
     ---
 */
-    
+
 
 
     
@@ -34,12 +34,15 @@ function make_files(li) {
     
     stream.once('open', function (fd) {
       stream.write("---\n");
-      stream.write("title: " + element.fields.title + "\n");
+      stream.write("title: " +  element.fields.title + " \n");
+      stream.write("date : " + "2016-10-14" + "\n")
       stream.write("contentful:" + "\n")
-      stream.write("  contentype: " + "\n")
-      stream.write("space_id : " + element.sys.id + "\n")
+      // element.fields.whoami
+      stream.write("  contentype: " + "interview" +  "\n")
+      stream.write("  entry_id : " + element.sys.id + " \n")
       stream.write("template : post.html \n")
-      stream.write("exists : " + element.fields.slug +"\n")
+    
+      stream.write("exists : " + element.fields.slug +" \n")
       stream.write("---")
       stream.end();
     })

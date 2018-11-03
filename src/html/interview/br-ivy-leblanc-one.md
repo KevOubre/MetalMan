@@ -1,8 +1,9 @@
 ---
-title: Br. Ivy Leblanc
+title: Br. Ivy Leblanc 
+date : 2016-10-14
 contentful:
-  contentype: 
-space_id : 4Pl0ugaMYMeUOcYyK2OUEc
+  contentype: interview
+  entry_id : 4Pl0ugaMYMeUOcYyK2OUEc 
 template : post.html 
-exists : br-ivy-leblanc-one
+exists : br-ivy-leblanc-one 
 ---
