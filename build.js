@@ -13,40 +13,29 @@ const client = contentful.createClient({
 
 function make_files(li) {
   li.items.forEach(element => {
-    //TO DO
-    // If file is audio write to /html/interviews with the necessary info
-    // essentially decompress files and fenagle them
-    /*
-    ---
-    title: metalsmith-contentful file
-    contentful:
-    content_type: interview
-    space_id: knnbub1gupcl
-    template: posts.html
-    ---
-*/
 
+    if (element.fields.whoami != undefined) {
+      var stream = fs.createWriteStream("src/html/" + element.fields.whoami + "/" + element.fields.slug + ".md");
 
+      stream.once('open', function (fd) {
+        stream.write("---\n");
+        stream.write("title: " + element.fields.title + " \n");
+        stream.write("date : " + "2016-10-14" + "\n")
+        stream.write("contentful:" + "\n")
+        
+        stream.write("  contentype: " + "interview" + "\n")
+        stream.write("  entry_id : " + element.sys.id + " \n")
+        if (element.fields.whoami == "interview"){
+          stream.write("template : post.html \n")
+        }else{
+          stream.write("template : wikientry.html \n")
+        }
 
-    
-    if (element.fields.whoami == "interview") {
-    var stream = fs.createWriteStream("src/html/"+element.fields.whoami + "/" +  element.fields.slug + ".md");
-    
-    stream.once('open', function (fd) {
-      stream.write("---\n");
-      stream.write("title: " +  element.fields.title + " \n");
-      stream.write("date : " + "2016-10-14" + "\n")
-      stream.write("contentful:" + "\n")
-      // element.fields.whoami
-      stream.write("  contentype: " + "interview" +  "\n")
-      stream.write("  entry_id : " + element.sys.id + " \n")
-      stream.write("template : post.html \n")
-    
-      stream.write("exists : " + element.fields.slug +" \n")
-      stream.write("---")
-      stream.end();
-    })
-  };
+        stream.write("exists : " + element.fields.slug + " \n")
+        stream.write("---")
+        stream.end();
+      })
+    };
 
   });
   //console.log(li.items)
@@ -97,11 +86,7 @@ ms = metalsmith(__dirname) // the working directory
       reverse: true
     }
   }))
-  .use(permalinks({
-    relative: false,
-    pattern: 'interviews/:blurb',
 
-  }))
   .use(markdown()) // convert markdown to HTML
   .use(contentful({
     space_id: 'knnbub1gupcl',

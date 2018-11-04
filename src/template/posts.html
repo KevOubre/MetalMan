@@ -1,12 +1,15 @@
+{{> indexheader}}
 <body>
   <ul>
     <!-- available data fetched from contentful -->
     {{#each data.entries }}
       <li>
-        <h2>{{fields.title}}</h2>
-        <p>{{fields.description}}</p>
-        <p><a href="{{_fileName}}">Read more</a></p>
+        
+        <a href="{{fields.whoami}}/{{fields.slug}}"><h2>{{fields.title}}</h2></a>
       </li>
     {{/each}}
     </ul>
     {{contents}}
+
+  
+{{> footer}}
