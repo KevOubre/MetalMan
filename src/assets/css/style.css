@@ -15,6 +15,10 @@ body{
   text-align-last: center;
   text-align: center;
 }
+
+p{
+  font-size:12px;
+}
 i{
   font-size: .5em;
 }
