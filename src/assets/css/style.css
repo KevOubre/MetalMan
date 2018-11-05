@@ -7,20 +7,25 @@ body{
   margin: 0px;
   background: #f15525;
   width: 100%;
-  font-size: 45px;
+  font-size: 35px;
   color: white;
   font-family: 'Oswald', sans-serif;
-  height: 1.5em;
+  height: 2em;
   text-align: center;
   text-align-last: center;
   text-align: center;
+  
 }
 
 p{
-  font-size:12px;
+  font-size:.95em;
+  line-height: 2em;
 }
-i{
-  font-size: .5em;
+
+.fas{
+
+  font-family: 'Oswald', sans-serif;
+ 
 }
 
 .header-link {
@@ -35,8 +40,8 @@ i{
 
 
 .maincontent {
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 1em;
   font-family: 'Montserrat', sans-serif;
 
