@@ -1,15 +1,16 @@
 {{> articleheader}}
-<body>
-    <div class="maincontent">
-    <h1>{{data.fields.title}}<h1>
-    
-    <audio controls="controls" class="audiobox">
-        <source src="https:{{data.fields.audio.fields.file.url}} " type="audio/ogg">
-      </audio>
-      
-    <p class="mainparagraph">{{data.fields.transcripedText}} </p>
 
-  {{contents}}
+<body>
+  <div class="maincontent">
+    <h1>{{data.fields.title}}<h1>
+
+        <audio controls="controls" class="audiobox">
+          <source src="https:{{data.fields.audio.fields.file.url}} " type="audio/ogg">
+        </audio>
+
+        <p class="mainparagraph">{{data.fields.transcripedText}} </p>
+
+        {{contents}}
   </div>
-  </body> 
+</body>
 {{> footer}}

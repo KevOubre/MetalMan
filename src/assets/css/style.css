@@ -22,6 +22,10 @@ p{
   line-height: 2em;
 }
 
+.header-text{
+  font-family: 'Oswald', sans-serif;
+  font-size: .85em;
+}
 .fas{
 
   font-family: 'Oswald', sans-serif;

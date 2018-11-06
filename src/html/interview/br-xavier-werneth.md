@@ -1,9 +1,9 @@
 ---
-title: Br. Werneth Xavier 
+title: Br. Xavier Werneth 
 date : 2016-10-14
 contentful:
   contentype: interview
   entry_id : 5IuMeTaNSokYgAYaGuUyCg 
 template : post.html 
-exists : br-werneth-xavier 
+exists : br-xavier-werneth 
 ---

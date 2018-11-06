@@ -1,5 +1,8 @@
 var contentful = require('contentful'),
-  fs = require('fs')
+  fs = require('fs'),
+  _ = require('underscore');
+
+
 
 
 

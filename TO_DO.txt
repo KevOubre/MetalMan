@@ -1,56 +1,46 @@
-<!DOCTYPE html>
-<html>
+ADD IMAGE TO WIKI
 
-<head>
-  <meta charset="utf-8">
-  <title>Brothers</title>
-  <meta name="description" content="" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-</head>
+READ ABOUT REFERENCE SO THAT THE WIKI -> INTERVIEW -> WIKI
+ADD ENTRY ON WIKI WITH (CONTACT) (EMAIL, PHONE NUMBER, ADDRESS, ETC.)
 
-<body>
-  <div class="topbar">
-   
+ADD FOOTER 
 
 
-  <a class="header-link"  href="../wiki.html">
-     <span class="header-text tinyones">&emsp; WIKI &emsp;</span>
-  </a>
-      <a class="header-link"  href="../index.html">
-    <span class="header-text">
-      &emsp; SACRE COEUR &emsp;
-    </span>
-  </a>
+removeDirForce("./src/html/interview/");
+removeDirForce("./src/html/wiki/");
 
-    
-  <a class="header-link"  href="../interviews.html">
-     <span class="header-text tinyones"> &emsp; INTERVIEWS  &emsp;</span>
-  </a>
 
-  </div><body>
-    <div class="maincontent">
-    <h1>Br. Ivy Leblanc<h1>
-    
-    <audio controls="controls" class="audiobox">
-        <source src="https://downloads.ctfassets.net/knnbub1gupcl/sU2dH5XTOKyee4Aq0YCK2/41a429b247b25c927f4220e1d10a95c9/Br._Ivy_Leblanc.ogg " type="audio/ogg">
-      </audio>
-    <p class="mainparagraph">
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo justo sit amet venenatis cursus. Nunc tristique dui a consequat luctus. Vivamus ut massa a ligula semper hendrerit. Maecenas pharetra sem efficitur, euismod tortor non, consequat sapien. Nulla ut quam urna. Aliquam elit urna, viverra quis viverra sit amet, aliquam sed sapien. Vivamus nec sem non metus aliquam finibus eu sed orci. Etiam placerat a arcu ac malesuada.
-
-Ut tempus suscipit finibus. Suspendisse aliquam sollicitudin leo, ut varius velit pharetra sit amet. Phasellus maximus nisi turpis, eget dapibus lorem varius sed. In eleifend ante eu efficitur tristique. Integer ullamcorper enim vel egestas placerat. Aliquam in mauris cursus, iaculis justo in, egestas nunc. Vivamus quis lacinia purus, quis interdum odio. Phasellus hendrerit, quam vel fringilla blandit, ligula odio semper urna, in lacinia nulla dolor sit amet enim. Vestibulum ut tincidunt ligula, eu sollicitudin velit. Sed porttitor ac nunc nec fermentum. Donec pharetra metus purus, id venenatis ex porttitor ac. Curabitur vel egestas tellus, non mattis elit. Proin sit amet mauris vel leo dapibus lobortis eget ut libero.
-
-Morbi arcu est, lobortis sed tristique a, volutpat finibus risus. Duis aliquet luctus pellentesque. Etiam suscipit faucibus tellus, non pellentesque arcu auctor nec. Curabitur egestas augue ex, quis luctus lorem tincidunt ut. Sed faucibus venenatis libero et accumsan. In pulvinar rhoncus metus a mollis. Fusce porttitor vestibulum condimentum. Mauris imperdiet ligula sit amet dictum ullamcorper. Curabitur sit amet ultricies quam. In eget vulputate tellus. Nulla pretium felis a mattis fermentum.
-
-Duis a orci facilisis, ultrices eros eget, blandit est. Donec lacinia leo dolor, a tincidunt mauris eleifend eu. Vestibulum vehicula mauris vitae nibh ultrices finibus. Aliquam pellentesque, neque eu euismod rhoncus, lacus ante convallis nulla, at aliquet lorem magna a tellus. Aliquam erat volutpat. Mauris et congue ipsum, id laoreet mauris. Fusce sit amet sapien vitae arcu vehicula condimentum vel non lectus. Suspendisse euismod leo non velit varius, sit amet faucibus tortor ullamcorper. Sed mauris sem, sodales a auctor sed, tincidunt ultricies tellus. Vivamus tincidunt ipsum euismod ligula elementum cursus. Nulla facilisi. Aliquam sollicitudin suscipit lorem eget egestas. Nulla facilisi.
-
-Etiam sed ultrices nulla. Proin dui nisi, vestibulum nec ante sit amet, gravida porta lacus. Donec malesuada, odio a scelerisque ullamcorper, tortor diam mollis arcu, sit amet aliquet ex ligula ac purus. In vitae tellus ac metus maximus tincidunt. Suspendisse tincidunt suscipit leo vitae tincidunt. Mauris sit amet erat eu elit aliquam interdum sed vitae lorem. Proin ante leo, volutpat auctor ante vel, dapibus fringilla eros. Integer volutpat velit dignissim, dignissim eros eget, mattis odio. Ut et blandit justo. Mauris nec quam vitae nulla sollicitudin ultricies in eu orci. Nam est tellus, fringilla sit amet nunc ac, blandit volutpat lectus. Quisque ornare enim a sapien sagittis iaculis. Mauris at dignissim augue.  </p>
-
-  
-  </div>
-  </body> 
-</body>  
-</html>
+// path should have trailing slash
+function removeDirForce(path) {
+    fs.readdir(path, function(err, files) {
+		   if (err) {
+		       console.log(err.toString());
+		   }
+		   else {
+		       if (files.length == 0) {
+			   fs.rmdir(path, function(err) {
+					if (err) {
+                                          console.log(err.toString());					    
+					}
+				    });
+		       }
+		       else {
+			   _.each(files, function(file) {
+				      var filePath = path + file + "/";
+				      fs.stat(filePath, function(err, stats) {
+						  if (stats.isFile()) {
+						      fs.unlink(filePath, function(err) {
+								    if (err) {
+                                                                        console.log(err.toString());
+								    }
+								});
+						  }
+						  if (stats.isDirectory()) {
+						      removeDirForce(filePath);
+						  }
+					      });
+				  });
+		       }
+		   }
+	       });
+}
