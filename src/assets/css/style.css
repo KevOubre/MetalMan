@@ -1,42 +1,62 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
 }
 
+
+p{
+  font-size:.55em;
+  line-height: 2em;
+}
+
+h1{
+  font-size: .80em;
+}
+
+h4{
+  font-size: .70em;
+}
+
+h5{
+  font-size: .5em;
+}
 
 .topbar {
   padding: 0px;
   margin: 0px;
   background: #f15525;
   width: 100%;
-  font-size: 35px;
+  font-size: 1em;
   color: white;
   font-family: 'Oswald', sans-serif;
-  height: 2em;
+  height: 1.75em;
   text-align: center;
   text-align-last: center;
   text-align: center;
   
 }
 
-p{
-  font-size:.85em;
-  line-height: 2em;
-}
 
 
 .header-text{
   font-family: 'Oswald', sans-serif;
   font-size: .85em;
 }
+
 .fas{
 
   font-family: 'Oswald', sans-serif;
  
 }
 
+.tinyones{
+  font-size:.5em;
+}
+
 .header-link {
   text-decoration: none;  
   color:white;
+  
 }
 
 .audiobox {

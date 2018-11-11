@@ -1,11 +1,24 @@
 {{> articleheader}}
+
 <body>
-<div  class="maincontent">
+  <div class="maincontent">
     <h1>{{data.fields.title}}</h1>
-    
+
     <p class="mainparagraph">{{data.fields.information}} </p>
-  {{contents}}
+
+    <h4> Interviews: </h1>
+    {{#each data.fields.theinterviews}}
+    {{debug}}
+    <li>
+      <a href="../{{this.fields.whoami}}/{{this.fields.slug}}">
+        <h5>{{this.fields.title}}</h5>
+      </a>
+      
+    </li>
+    {{/each}}
+
+    {{contents}}
 
   </div>
-  </body> 
+</body>
 {{> footer}}
