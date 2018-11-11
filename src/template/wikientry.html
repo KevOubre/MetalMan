@@ -7,18 +7,26 @@
     <p class="mainparagraph">{{data.fields.information}} </p>
 
     <h4> Interviews: </h1>
-    {{#each data.fields.theinterviews}}
-    {{debug}}
-    <li>
-      <a href="../{{this.fields.whoami}}/{{this.fields.slug}}">
-        <h5>{{this.fields.title}}</h5>
-      </a>
+    
+      {{#each data.fields.theinterviews}}
+
+
+
+        <a href="../{{this.fields.wxhoami}}/{{this.fields.slug}}">
+          <h5>{{this.fields.title}}</h5>
+        </a>
+      {{/each}}
       
-    </li>
-    {{/each}}
+      <div class="contact-fields">
 
-    {{contents}}
+        {{#each data.fields.contact}}
+        <h5> {{this}} </h5>
 
+        {{/each}}
+
+
+        {{contents}}
+      </div>
   </div>
 </body>
 {{> footer}}

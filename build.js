@@ -46,6 +46,7 @@ function make_files(li) {
         if (element.fields.whoami == "interview") {
           stream.write("template : post.html \n")
         } else {
+          console.log(element.fields);
           stream.write("template : wikientry.html \n")
         }
 

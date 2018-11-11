@@ -3,6 +3,10 @@ body{
   font-size: 32px;
 }
 
+li{
+  font-size:.5em;
+}
+
 
 p{
   font-size:.55em;
@@ -37,6 +41,10 @@ h5{
 }
 
 
+.contact-fields{
+  text-align: center;
+
+}
 
 .header-text{
   font-family: 'Oswald', sans-serif;
