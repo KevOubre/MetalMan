@@ -72,6 +72,11 @@ h5{
 
 }
 
+.floated{
+  float:right;
+  width:20%;
+}
+
 
 .maincontent {
   margin-left: 10%;
