@@ -15,5 +15,5 @@ function removeDirForce(directory) {
 }
 
 
-removeDirForce("src/html/interview");
-removeDirForce("src/html/wiki");
+removeDirForce("src/html/interview/");
+removeDirForce("src/html/wiki/");
