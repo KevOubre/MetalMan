@@ -6,3 +6,6 @@ UPLOAD ALL INTERVIEWS
 
 
 
+
+<!-- <p class="mainparagraph">{{data.fields.transcripedText}} </p> -->
+might need that later
