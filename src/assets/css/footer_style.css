@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 0em;
+    font-size:20px;
+    font-family: 'Anton', sans-serif;
+  
+  font-family: 'Righteous', cursive;
+  }
+  
+  
+  
+  
+  .sidebar-left,
+  .sidebar-right,
+  .sidebar-middle{
+    background: #C9364C;
+    color:white;
+    padding: 0;
+  }
+  
+  
+  .grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo{
+    height:2em;
+  }
+  
+  
