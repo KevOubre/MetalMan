@@ -6,7 +6,7 @@ var contentful = require('contentful'),
 
 // path should have trailing slash
 
-function removeDirForce(directory) {
+/*function removeDirForce(directory) {
   fs.readdir(directory, (err, files) => {
     if (err) throw err;
   
@@ -16,7 +16,7 @@ function removeDirForce(directory) {
       });
     }
   });
-}
+} */
 
 
 const client = contentful.createClient({
