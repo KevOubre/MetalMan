@@ -1,4 +1,5 @@
 .grid {
+    padding-top:90%;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: repeat(3, 100px);
