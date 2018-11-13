@@ -18,6 +18,13 @@ var contentful = require('contentful'),
   });
 } */
 
+fs.readdir(path, function(err, items) {
+  console.log(items);
+
+  for (var i=0; i<items.length; i++) {
+      console.log(items[i]);
+  }
+});
 
 const client = contentful.createClient({
   space: 'knnbub1gupcl',
@@ -53,6 +60,9 @@ function make_a_file(element) {
       }
 
       stream.end();
+
+      readdir(element.fields.whoami);
+      
     })
   }
 };
