@@ -34,7 +34,7 @@ function make_files(li) {
     
     if (element.fields.whoami != undefined) {
       var stream = fs.createWriteStream("src/html/" + element.fields.whoami + "/" + element.fields.slug + ".md");
-
+      console.log(element.fields.title)
       stream.once('open', function (fd) {
         stream.write("---\n");
         stream.write("title: " + element.fields.title + " \n");
