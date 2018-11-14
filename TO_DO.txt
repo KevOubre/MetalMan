@@ -3,9 +3,10 @@ ADD IMAGE TO INDEX
 ADD GRID TO MENU BAR
 SHOW MR. LOSAVIO
 UPLOAD ALL INTERVIEWS
-
+ADD LUNR.JS
 
 
 
 <!-- <p class="mainparagraph">{{data.fields.transcripedText}} </p> -->
+
 might need that later

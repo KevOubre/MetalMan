@@ -56,7 +56,8 @@ function make_a_file(element) {
         }
       } else {
         stream.write("template : wikientry.html \n")
-        stream.write("---")
+        stream.write("---\n")
+        stream.write(element.fields.information)
 
       }
 

@@ -4,7 +4,8 @@
   <div class="maincontent">
     <h1>{{data.fields.title}}</h1>
     <img src="{{data.fields.picture.fields.file.url}}" class="picture-frame"> 
-    <p class="mainparagraph">{{data.fields.information}} </p>
+    
+    {{{contents}}}
 
     <h1> Interviews: </h1>
     
@@ -26,7 +27,7 @@
         {{/each}}
 
 
-        {{contents}}
+        
       </div>
   </div>
 </body>
