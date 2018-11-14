@@ -67,15 +67,16 @@ h5{
   
 }
 
+.picture-frame{
+  width:40%;
+  float: right;
+}
+
 .audiobox {
   width: 40%;
 
 }
 
-.floated{
-  float:right;
-  width:20%;
-}
 
 
 .maincontent {
