@@ -11,3 +11,5 @@ ADD LUNR.JS
 <!-- <p class="mainparagraph">{{data.fields.transcripedText}} </p> -->
 
 might need that later
+
+https://catholichigh.org/wp-content/uploads/2017/07/brothers-logo.png
