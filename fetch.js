@@ -16,8 +16,7 @@ var contentful = require('contentful'),
       });
     }
   });
-} */
-
+  
 fs.readdir(path, function(err, items) {
   console.log(items);
 
@@ -25,6 +24,8 @@ fs.readdir(path, function(err, items) {
       console.log(items[i]);
   }
 });
+} */
+
 
 const client = contentful.createClient({
   space: 'knnbub1gupcl',
@@ -36,7 +37,7 @@ function make_a_file(element) {
 
   if (element.fields.whoami != undefined) {
     var stream = fs.createWriteStream("src/html/" + element.fields.whoami + "/" + element.fields.slug + ".md");
-    console.log(element.fields.title)
+    //console.log(element.fields.title)
     stream.once('open', function (fd) {
       stream.write("---\n");
       stream.write("title: " + element.fields.title + " \n");
@@ -60,9 +61,15 @@ function make_a_file(element) {
       }
 
       stream.end();
-
-      readdir(element.fields.whoami);
       
+      
+      fs.readdir("src/html/", (err, files) => {
+        files.forEach(file => {
+          
+          console.log(file);
+        });
+      })
+        
     })
   }
 };

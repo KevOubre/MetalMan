@@ -5,5 +5,8 @@ node_modules/
 build/
 
 TO_DO.txt
-TO_DO.txt
+main.bat
+
+src/htm/interview/
+src/htm/wiki/
 
