@@ -49,7 +49,7 @@ function make_a_file(element) {
       stream.write("exists : " + element.fields.slug + " \n")
 
       if (element.fields.whoami == "interview") {
-        stream.write("template : post.html \n")
+        stream.write("template : interviewentry.html \n")
         stream.write("--- ")
         if (element.fields.transcripedText != undefined) {
           stream.write("\n" + element.fields.transcripedText)
@@ -84,6 +84,7 @@ function make_files(li) {
         make_a_file(obj)
       } catch (e) {
         console.log(e)
+        console.log("\n \n this is an error...")
       }
     })
 

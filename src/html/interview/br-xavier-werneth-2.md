@@ -5,6 +5,6 @@ contentful:
   contentype: interview
   entry_id : 12th3cZOiyWAqSagiAiqKS 
 exists : br-xavier-werneth-2 
-template : post.html 
+template : interviewentry.html 
 --- 
 lorem ipsum

@@ -5,5 +5,5 @@ contentful:
   contentype: interview
   entry_id : 15rH7HJzbQA6qQCE4AIA84 
 exists : br-chris-sweeney 
-template : post.html 
+template : interviewentry.html 
 --- 

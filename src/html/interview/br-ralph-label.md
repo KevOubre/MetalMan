@@ -5,6 +5,6 @@ contentful:
   contentype: interview
   entry_id : 1rmOsHG48w0OIcyMs86WuA 
 exists : br-ralph-label 
-template : post.html 
+template : interviewentry.html 
 --- 
 test

@@ -5,7 +5,7 @@ contentful:
   contentype: interview
   entry_id : 5IuMeTaNSokYgAYaGuUyCg 
 exists : br-xavier-werneth 
-template : post.html 
+template : interviewentry.html 
 --- 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra blandit dui, sed posuere nulla pulvinar sed. Nunc quis nulla sit amet elit suscipit ornare. Quisque sit amet dapibus nisi, a rutrum neque. Nam sollicitudin fermentum velit, eu dapibus quam tincidunt ac. Vivamus nec mauris quis sapien convallis ornare. Phasellus tincidunt ligula facilisis dapibus euismod. Morbi viverra vitae eros id congue. Sed ultricies lectus ut lobortis finibus.
 

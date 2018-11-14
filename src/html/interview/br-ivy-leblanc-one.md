@@ -5,7 +5,7 @@ contentful:
   contentype: interview
   entry_id : 4Pl0ugaMYMeUOcYyK2OUEc 
 exists : br-ivy-leblanc-one 
-template : post.html 
+template : interviewentry.html 
 --- 
 
 
