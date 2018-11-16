@@ -5,8 +5,6 @@ var
   templates = require('metalsmith-templates'),
   assets = require('metalsmith-assets'),
   collections = require('metalsmith-collections'),
-  handlebars = require('handlebars'),
-  permalinks = require('metalsmith-permalinks'),
   contentful = require('contentful-metalsmith')
 
 
@@ -60,6 +58,6 @@ ms = metalsmith(__dirname) // the working directory
     if (err) {
       console.log(err);
     } else {
-      console.log('E!');
+      console.log('Mission: Success!');
     }
   });;
