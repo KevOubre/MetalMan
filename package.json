@@ -8,7 +8,6 @@
     "contentful-metalsmith": "^0.11.0",
     "metalsmith-handlebars": "^1.1.0",
     "metalsmith-templates": "^0.7.0",
-    "scroll-out": "^2.2.4",
     "underscore": "^1.9.1"
   },
   "devDependencies": {
@@ -25,7 +24,8 @@
     "metalsmith-markdown": "^1.1.0",
     "metalsmith-permalinks": "^1.0.0",
     "metalsmith-publish": "^0.1.5",
-    "metalsmith-word-count": "0.0.4"
+    "metalsmith-word-count": "0.0.4",
+    "scroll-out": "^2.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
