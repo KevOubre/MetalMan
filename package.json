@@ -8,6 +8,7 @@
     "contentful-metalsmith": "^0.11.0",
     "metalsmith-handlebars": "^1.1.0",
     "metalsmith-templates": "^0.7.0",
+    "scroll-out": "^2.2.4",
     "underscore": "^1.9.1"
   },
   "devDependencies": {

@@ -4,10 +4,10 @@
   <div class="maincontent">
     <h1>{{data.fields.title}}</h1>
     <img src="{{data.fields.picture.fields.file.url}}" class="picture-frame"> 
-    
+    <article>
     {{{contents}}}
-
-    <h1> Interviews: </h1>
+    </article>
+    <h3> Interviews: </h3>
     
       {{#each data.fields.theinterviews}}
 
@@ -20,12 +20,14 @@
       
       <div class="contact-fields">
 
-    <h1> Contact: </h1>
+    <h3> Contact: </h3>
+        <span class="contact-field">
         {{#each data.fields.contact}}
+        
         <h5> {{this}} </h5>
-
         {{/each}}
-
+        </span>
+        
 
         
       </div>
