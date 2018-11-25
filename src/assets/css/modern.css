@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --main-color: #444140;
     --text-color: #EFF1F3;
@@ -80,10 +81,86 @@
   }
   
   .grid {
+=======
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    height: 90vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section > span > p{
+    font-size:.6em;
+}
+
+article{
+    font-size:16px;
+    line-height: 2em;
+}
+
+
+.sec {
+    padding: 1em;
+    background: purple;
+    width: 96%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: top;
+    overflow: auto;
+}
+
+.nerd-sec {
+    background: #403f4c;
+}
+
+.about-sec {
+    background: #e87461;
+}
+
+.int-sec {
+    background: #197278;
+}
+
+.wiki-sec {
+    background: #f15525;
+}
+
+nav {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    color: white;
+    height: 3em;
+    width: 100%;
+}
+
+
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+    padding-left: .5em;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    
+    font-size: .75em;
+    color: white
+}
+
+
+
+.grid {
+>>>>>>> cd92496890d59b5ebdbe94639ff4c06d10815ea4
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: repeat(3, 100px);
     grid-gap: 0em;
+<<<<<<< HEAD
     font-size:.6em;
     height:0em;
   }
@@ -108,6 +185,65 @@
   }
   
   [data-scroll] {
+=======
+    font-size: 20px;
+    
+    height: 0em;
+}
+
+
+footer>span {
+    background: black;
+    color: white;
+    padding: 0;
+    height: 10em;
+    font-size:.5em;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.grid>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 1em;
+}
+
+
+.picture-frame {
+    width: 20vw;
+    float: right;
+}
+
+.audiobox {
+    width: 40%;
+
+}
+
+
+
+.maincontent {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.contact-field {
+    font-size: .65em;
+    line-height: 0em;
+    text-align: center;
+    color: black;
+    
+}
+
+[data-scroll] {
+>>>>>>> cd92496890d59b5ebdbe94639ff4c06d10815ea4
     transition: opacity 1s;
   }
   [data-scroll="in"] {
