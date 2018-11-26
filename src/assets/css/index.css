@@ -11,7 +11,9 @@
     align-items:top;
     overflow: auto;
   }
-  
+  .main-list{
+    height: calc(90vh - 1em)   ;
+  }
   .nerd-sec{
     background:#403f4c;
   }

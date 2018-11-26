@@ -13,13 +13,17 @@ footer>span {
     color: white;
     padding: 0;
     height: 10em;
+    
+
 }
 
 
 .grid>* {
+    
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .logo {
