@@ -1,0 +1,30 @@
+
+  .sec{
+    padding:1em;
+    -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+  -moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+  box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+    width:99;
+    height:100vh;
+    color:var(--text-color);
+    display: flex;
+    align-items:top;
+    overflow: auto;
+  }
+  
+  .nerd-sec{
+    background:#403f4c;
+  }
+  
+  .about-sec{
+    background:#e87461;
+  }
+  
+  .int-sec{
+    background:#197278;
+  }
+  
+  .wiki-sec{
+    background:#f15525;
+  }
+  

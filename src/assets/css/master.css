@@ -1,0 +1,31 @@
+:root {
+  --main-color: #444140;
+  --text-color: #EFF1F3;
+  /*--text-color: #ffffff;*/
+  --hover-color: #696773;
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+
+}
+
+span > h1 {
+  font-size:2em; 
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}

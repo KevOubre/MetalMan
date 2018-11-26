@@ -1,0 +1,15 @@
+
+.picture-frame{
+    width: 10em;
+    float:right;
+    padding:.6em;
+}
+
+article{
+    font-size:16px;
+    padding:.5em;
+}
+
+h1{
+    padding:.5em;
+}

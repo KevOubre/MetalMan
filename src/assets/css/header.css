@@ -1,0 +1,27 @@
+nav {
+    margin: 0;
+    overflow: hidden;
+    background: var(--main-color);
+    color: white;
+
+    width: 100%;
+}
+
+
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+nav ul li:hover a {
+    background: var(--hover-color);
+}

@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 0em;
+    font-size: .6em;
+    height: 0em;
+}
+
+
+footer>span {
+    background: var(--main-color);
+    color: white;
+    padding: 0;
+    height: 10em;
+}
+
+
+.grid>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 2em;
+}
+
+[data-scroll] {
+    transition: opacity 1s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+}
