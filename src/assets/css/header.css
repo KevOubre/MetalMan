@@ -12,7 +12,7 @@ nav ul li {
     /* This allow us to arrange list items in a row, without using float */
     display: inline-block;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 1em;
 }
 
