@@ -17,14 +17,13 @@ article{
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .maincontent {
         font-size:16px;
-    padding:.5em;
+        padding:.5em;
+        margin-left:0%;
+        margin-right:0%;
     }
   }
 
-h1{
-    padding:.5em;
-}
 
