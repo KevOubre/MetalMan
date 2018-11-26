@@ -2,18 +2,18 @@
 
 <body>
   <div class="maincontent">
-    <img class="picture-frame" src="{{data.fields.picture.fields.file.url}}" > 
     <h1>{{data.fields.title}}<h1>
-
-        <audio controls="controls" class="audiobox">
-          <source src="https:{{data.fields.audio.fields.file.url}} " type="audio/ogg">
-        </audio>
+        <img class="picture-frame" src="{{data.fields.picture.fields.file.url}}">
 
         <article>
-        {{{ contents }}}
+
+          <audio controls="controls" class="audiobox">
+            <source src="https:{{data.fields.audio.fields.file.url}} " type="audio/ogg">
+          </audio>
+          {{{ contents }}}
+
 
         </article>
-
   </div>
 </body>
 {{> footer}}
