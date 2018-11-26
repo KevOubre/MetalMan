@@ -6,11 +6,15 @@
 }
 
 .maincontent{
-    font-size:16px;
     padding:.5em;
     margin-left:10%;
     margin-right: 10%;
 
+}
+
+article{
+    font-size:16px;
+    
 }
 
 @media screen and (max-width: 600px) {
