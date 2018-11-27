@@ -8,7 +8,7 @@ margin-right:25%;
 box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
   width:99;
   
-  line-height:1em;
+  line-height:2em;
   color:var(--text-color);
   display: flex;
   align-items:top;
