@@ -33,8 +33,10 @@ footer>span {
 .liscence-info{
     color:"grey";
     text-align:center;
-    grid-row-start: 1;
-    grid-row-end:5;
+    grid-column-start: 1;
+    grid-column-end:5;
+    height:1em;
+    color:grey;
 }
 
 [data-scroll] {

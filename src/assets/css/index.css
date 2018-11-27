@@ -1,37 +1,52 @@
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 0em;
+    font-size: .6em;
+    height: 0em;
+}
 
-  .sec{
-    padding:1em;
-    -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
-  -moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
-  box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
-    width:99;
-    padding-bottom: 4em;
-    line-height:1em;
-    color:var(--text-color);
-    display: flex;
-    align-items:top;
+
+footer>span {
+    background: var(--main-color);
+    color: white;
+    padding: 0;
+    height: 10em;
     
-  }
 
-  .sec > span > p{
-    font-size: .85em; 
-  }
-  .main-list{
-    height: calc(90vh - 1em)   ;
-  }
-  .nerd-sec{
-    background:#403f4c;
-  }
-  
-  .about-sec{
-    background:#e87461;
-  }
-  
-  .int-sec{
-    background:#197278;
-  }
-  
-  .wiki-sec{
-    background:#f15525;
-  }
-  
+}
+
+
+.grid>* {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    height: 2em;
+}
+
+.liscence-info{
+    color:"grey";
+    text-align:center;
+    grid-column-start: 1;
+    grid-column-end:5;
+    height:1em;
+    color:grey;
+}
+
+[data-scroll] {
+    transition: opacity 1s;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+}
