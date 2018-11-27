@@ -30,6 +30,13 @@ footer>span {
     height: 2em;
 }
 
+.liscence-info{
+    color:"grey";
+    text-align:center;
+    grid-row-start: 0;
+    grid-row-end:2;
+}
+
 [data-scroll] {
     transition: opacity 1s;
 }

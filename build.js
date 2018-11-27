@@ -50,7 +50,9 @@ ms = metalsmith(__dirname) // the working directory
     partials: {
       articleheader: '../partials/articleheader',
       indexheader: '../partials/indexheader',
-      footer: '../partials/footer'
+      indexfooter: '../partials/indexfooter',
+      articlefooter: '../partials/articlefooter'
+
     }
   }))
 

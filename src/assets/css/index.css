@@ -5,11 +5,16 @@
   -moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
   box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
     width:99;
-    height:100vh;
+    padding-bottom: 4em;
+    line-height:1em;
     color:var(--text-color);
     display: flex;
     align-items:top;
-    overflow: auto;
+    
+  }
+
+  .sec > span > p{
+    font-size: .85em; 
   }
   .main-list{
     height: calc(90vh - 1em)   ;
