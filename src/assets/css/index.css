@@ -1,52 +1,49 @@
-.grid {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: repeat(3, 100px);
-    grid-gap: 0em;
-    font-size: .6em;
-    height: 0em;
-}
 
 
-footer>span {
-    background: var(--main-color);
-    color: white;
-    padding: 0;
-    height: 10em;
-    
-
-}
-
-
-.grid>* {
-    
+.sec{
+    padding:1em;
+    -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+  -moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+  box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+    width:99;
+    padding-bottom: 4em;
+    line-height:1em;
+    color:var(--text-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    align-items:top;
+    height: 99vh;
+}
+.sec > span > p{
+ font-size: .85em; 
+ color:var(--text-color);
 }
 
-.logo {
-    height: 2em;
+.sec > span > a{
+ text-decoration: none;
+ color:var(--text-color);
 }
 
-.liscence-info{
-    color:"grey";
-    text-align:center;
-    grid-column-start: 1;
-    grid-column-end:5;
-    height:1em;
-    color:grey;
+.sec > span > a:hover{
+  text-decoration: none;
+  
+ }
+ 
+
+.main-list{
+ height: calc(90vh - 1em)   ;
+}
+.nerd-sec{
+ background:#909097;
 }
 
-[data-scroll] {
-    transition: opacity 1s;
+.about-sec{
+ background:#e87461;
 }
 
-[data-scroll="in"] {
-    opacity: 1;
+.int-sec{
+ background:#197278;
 }
 
-[data-scroll="out"] {
-    opacity: 0;
+.wiki-sec{
+ background:#f15525;
 }
