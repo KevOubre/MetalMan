@@ -1,7 +1,7 @@
 
 
 .sec{
-  padding:10em;
+  padding:2em;
   -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
 -moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
 box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
@@ -11,6 +11,7 @@ box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
   color:var(--text-color);
   display: flex;
   align-items:top;
+
   height: auto;
   min-height: 100% !important;
 
