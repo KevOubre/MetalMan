@@ -1,40 +1,25 @@
+
+// loads contentful 
+//like import with python
 var contentful = require('contentful'),
   fs = require('fs'),
   path = require('path');
 
 
 
-// path should have trailing slash
-
-/*function removeDirForce(directory) {
-  fs.readdir(directory, (err, files) => {
-    if (err) throw err;
-  
-    for (const file of files) {
-      fs.unlink(path.join(directory, file), err => {
-        if (err) throw err;
-      });
-    }
-  });
-  
-fs.readdir(path, function(err, items) {
-  console.log(items);
-
-  for (var i=0; i<items.length; i++) {
-      console.log(items[i]);
-  }
-});
-} */
-
-
+// makes a connection with the Contentful Space
+// the numbers are special to this environment
 const client = contentful.createClient({
   space: 'knnbub1gupcl',
   environment: 'master', // defaults to 'master' if not set
   accessToken: 'dad21cd7010f7eb24533c2f50a8502b1704b30051ebaea6e2ddc0c3b906769f8'
 })
 
-function make_a_file(element) {
 
+// given the JSON from contentful creates new files based on it
+function make_a_file(element) {
+  // if the content has a whoami field
+  // shows
   if (element.fields.whoami != undefined) {
     var stream = fs.createWriteStream("src/html/" + element.fields.whoami + "/" + element.fields.slug + ".md");
     //console.log(element.fields.title)
