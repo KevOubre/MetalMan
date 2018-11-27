@@ -1,49 +1,51 @@
 
 
 .sec{
-    padding:1em;
-    -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
-  -moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
-  box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
-    width:99;
-    padding-bottom: 4em;
-    line-height:1em;
-    color:var(--text-color);
-    display: flex;
-    align-items:top;
-    height: 99vh;
+  padding:10em;
+margin-right:25%;
+  -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+-moz-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
+  width:99;
+  
+  line-height:1em;
+  color:var(--text-color);
+  display: flex;
+  align-items:top;
+  height: 99vh;
 }
+
 .sec > span > p{
- font-size: .85em; 
- color:var(--text-color);
+font-size: .85em; 
+color:var(--text-color);
 }
 
 .sec > span > a{
- text-decoration: none;
- color:var(--text-color);
+text-decoration: none;
+color:var(--text-color);
 }
 
 .sec > span > a:hover{
-  text-decoration: none;
-  
- }
- 
+text-decoration: none;
+
+}
+
 
 .main-list{
- height: calc(90vh - 1em)   ;
+height: calc(90vh - 1em)   ;
 }
 .nerd-sec{
- background:#909097;
+background:#909097;
 }
 
 .about-sec{
- background:#e87461;
+background:#e87461;
 }
 
 .int-sec{
- background:#197278;
+background:#197278;
 }
 
 .wiki-sec{
- background:#f15525;
+background:#f15525;
 }
