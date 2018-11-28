@@ -19,6 +19,7 @@ box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
 
 .vector-art{
   float:right;  
+  color: var(--text-color);
 }
 
 .sec > span > p{
@@ -44,6 +45,7 @@ text-decoration: none;
   height: auto;
   min-height: 100vh !important;
 }
+
 .nerd-sec{
 background:#909097;
 }
