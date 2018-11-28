@@ -13,7 +13,7 @@ box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
   align-items:top;
 
   height: auto;
-  min-height: 100% !important;
+  min-height: 100vh !important;
 
 }
 
@@ -40,7 +40,9 @@ text-decoration: none;
 
 
 .main-list{
-height: calc(90vh - 1em)   ;
+  
+  height: auto;
+  min-height: 100vh !important;
 }
 .nerd-sec{
 background:#909097;
