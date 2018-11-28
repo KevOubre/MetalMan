@@ -35,7 +35,9 @@ ms = metalsmith(__dirname) // the working directory
     }
   }))
 
-  .use(markdown()) // convert markdown to HTML
+  .use(markdown({
+    breaks: true,
+  })) // convert markdown to HTML
   .use(contentful({
     space_id: 'knnbub1gupcl',
     access_token: 'dad21cd7010f7eb24533c2f50a8502b1704b30051ebaea6e2ddc0c3b906769f8',
