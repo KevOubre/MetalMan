@@ -15,9 +15,12 @@
 article{
     font-size:16px;
     font-family: 'Montserrat', sans-serif;
-    
+
     line-height:2em;
 }
+
+article > p {margin-bottom:1.5em}
+
 
 @media screen and (max-width: 400px) {
     .maincontent {
