@@ -29,7 +29,7 @@ ms = metalsmith(__dirname) // the working directory
       reverse: true
     },
     wiki: {
-      pattern: 'wiki/*.md',
+      pattern: 'bio/*.md',
       sortBy: 'date',
       reverse: true
     }
