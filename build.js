@@ -28,7 +28,7 @@ ms = metalsmith(__dirname) // the working directory
       sortBy: 'date',
       reverse: true
     },
-    wiki: {
+    bio: {
       pattern: 'bio/*.md',
       sortBy: 'date',
       reverse: true
