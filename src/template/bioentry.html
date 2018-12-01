@@ -3,34 +3,36 @@
 <body>
   <div class="maincontent">
     <h1>{{data.fields.title}}</h1>
-    <img src="{{data.fields.picture.fields.file.url}}" class="picture-frame"> 
+    <img src="{{data.fields.picture.fields.file.url}}" class="picture-frame">
     <article>
-    {{{contents}}}
+      {{{contents}}}
     </article>
     <h3> Interviews: </h3>
-    
+    <span class="interviews-field">
       {{#each data.fields.theinterviews}}
 
 
 
-        <a href="../{{this.fields.whoami}}/{{this.fields.slug}}">
-          <h5>{{this.fields.title}}</h5>
-        </a>
+      <a href="../{{this.fields.whoami}}/{{this.fields.slug}}">
+        <h5>{{this.fields.title}}</h5>
+      </a>
       {{/each}}
-      
-      <div class="contact-fields">
 
-    <h3> Contact: </h3>
-        <span class="contact-field">
+    </span>
+
+    <div class="contact-fields">
+
+      <h3> Contact: </h3>
+      <span class="contact-field">
         {{#each data.fields.contact}}
-        
-        <h5> {{this}} </h5>
-        {{/each}}
-        </span>
-        
 
-        
-      </div>
+        <p> {{this}} </p>
+        {{/each}}
+      </span>
+
+
+
+    </div>
   </div>
 </body>
 {{> articlefooter}}

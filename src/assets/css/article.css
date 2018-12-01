@@ -11,6 +11,18 @@
     margin-right: 10%;
 }
 
+.contact-fields{
+    font-size:.75em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.interviews-field{
+    
+    font-size:.75em;
+    line-height: 1em;
+}
+
 
 article{
     font-size:16px;
