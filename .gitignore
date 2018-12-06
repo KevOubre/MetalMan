@@ -9,7 +9,5 @@ TO_DO.txt
 main.bat
 upload.js
 
-src/html/interview/*.md
-src/html/bio/*.md
-
-main.bat
+src/html/interview/
+src/html/bio/
