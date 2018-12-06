@@ -1,2 +1,2 @@
-node fetch
+node empty
 node build

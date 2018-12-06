@@ -4,7 +4,7 @@ var   fs = require('fs'),
 
 function removeDirForce(directory) {
   fs.readdir(directory, (err, files) => {
-    if (err) throw err;
+    if (err) {throw err};
   
     for (const file of files) {
       fs.unlink(path.join(directory, file), err => {
@@ -16,4 +16,4 @@ function removeDirForce(directory) {
 
 
 removeDirForce("src/html/interview/");
-removeDirForce("src/html/wiki/");
+removeDirForce("src/html/bio/");
