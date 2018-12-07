@@ -1,4 +1,3 @@
-
 // loads contentful 
 //like import with python
 var contentful = require('contentful'),
@@ -20,43 +19,47 @@ const client = contentful.createClient({
 function make_a_file(element) {
   // if the content has a whoami field
   // shows
-  if (element.fields.whoami != undefined) {
-    var stream = fs.createWriteStream("src/html/" + element.fields.whoami + "/" + element.fields.slug + ".md");
-    //console.log(element.fields.title)
-    stream.once('open', function (fd) {
-      stream.write("---\n");
-      stream.write("title: " + element.fields.title + " \n");
-      stream.write("date : " + "2016-10-14" + "\n")
-      stream.write("contentful:" + "\n")
+  try {
+    if (element.fields.whoami != undefined) {
+      var stream = fs.createWriteStream("src/html/" + element.fields.whoami + "/" + element.fields.slug + ".md");
+      //console.log(element.fields.title)
+      stream.once('open', function (fd) {
+        stream.write("---\n");
+        stream.write("title: " + element.fields.title + " \n");
+        stream.write("date : " + "2016-10-14" + "\n")
+        stream.write("contentful:" + "\n")
 
-      stream.write("  contentype: " + "interview" + "\n")
-      stream.write("  entry_id : " + element.sys.id + " \n")
-      stream.write("exists : " + element.fields.slug + " \n")
+        stream.write("  contentype: " + "interview" + "\n")
+        stream.write("  entry_id : " + element.sys.id + " \n")
+        stream.write("exists : " + element.fields.slug + " \n")
 
-      if (element.fields.whoami == "interview") {
-        stream.write("template : interviewentry.html \n")
-        stream.write("--- ")
-        if (element.fields.transcripedText != undefined) {
-          stream.write("\n" + element.fields.transcripedText)
+        if (element.fields.whoami == "interview") {
+          stream.write("template : interviewentry.html \n")
+          stream.write("--- ")
+          if (element.fields.transcripedText != undefined) {
+            stream.write("\n" + element.fields.transcripedText)
+          }
+        } else {
+          stream.write("template : wikientry.html \n")
+          stream.write("---\n")
+          stream.write(element.fields.information)
+
         }
-      } else {
-        stream.write("template : wikientry.html \n")
-        stream.write("---\n")
-        stream.write(element.fields.information)
 
-      }
+        stream.end();
 
-      stream.end();
-      
-      
-      fs.readdir("src/html/", (err, files) => {
-        files.forEach(file => {
-          
-          console.log(file);
-        });
+
+        fs.readdir("src/html/", (err, files) => {
+          files.forEach(file => {
+
+            console.log(file);
+          });
+        })
+
       })
-        
-    })
+    }
+  } finally {
+    console.log("something is broken");
   }
 };
 
@@ -64,19 +67,19 @@ function make_a_file(element) {
 function make_files(li) {
 
 
-    li.items.forEach(obj => {
-      try {
-        make_a_file(obj)
-      } catch (e) {
-        console.log(e)
-        console.log("\n \n this is an error...")
-      }
-    })
+  li.items.forEach(obj => {
+    try {
+      make_a_file(obj)
+    } catch (e) {
+      console.log(e)
+      console.log("\n \n this is an error...")
+    }
+  })
 
-  };
+};
 
 
-  //console.log(li.items)
+//console.log(li.items)
 
 
 client.getEntries()

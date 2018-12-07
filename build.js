@@ -12,7 +12,7 @@ ms = metalsmith(__dirname) // the working directory
   .clean(true) // clean the build directory
   .metadata({
     site: {
-      name: 'Brothers',
+      name: 'Sacre Coeur',
     }
   })
   .source('./src/html/') // the page source directory
