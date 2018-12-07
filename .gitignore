@@ -9,5 +9,5 @@ TO_DO.txt
 main.bat
 upload.js
 
-#src/html/interview/
-#src/html/bio/
+src/html/interview/
+src/html/bio/

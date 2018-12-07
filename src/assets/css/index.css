@@ -1,5 +1,6 @@
 
 
+
 .sec{
   padding:2em;
   -webkit-box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
@@ -16,6 +17,8 @@ box-shadow: inset 0px -10px 39px 0px rgba(43,45,66,0.56);
   min-height: 100vh !important;
 
 }
+
+
 
 .vector-art{
   float:right;  
@@ -38,6 +41,11 @@ color:var(--text-color);
 text-decoration: none;
 
 }
+
+.main-content{
+  background:#FFF275;
+}
+
 
 
 .main-list{
