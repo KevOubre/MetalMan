@@ -10,11 +10,15 @@
 
 footer>span {
     background: var(--main-color);
-    color: white;
+    color: grey;
     padding: 0;
     height: 10em;
     
 
+}
+
+.middle-bar{
+    text-align: center;
 }
 
 
@@ -31,7 +35,6 @@ footer>span {
 }
 
 .liscence-info{
-    color:"grey";
     text-align:center;
     grid-column-start: 1;
     grid-column-end:5;
